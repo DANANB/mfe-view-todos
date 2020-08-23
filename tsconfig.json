@@ -1,7 +1,12 @@
 {
   "extends": "ts-config-single-spa",
   "compilerOptions": {
-    "jsx": "react"
+    "baseUrl": ".",
+    "jsx": "react",
+    "typeRoots": ["src/types", "node_modules/@types"],
+    "paths": {
+      "@dananb/eventmanager": ["@dananb__eventmanager"]
+    }
   },
   "include": ["src/**/*"]
 }
