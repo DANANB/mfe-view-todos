@@ -9,6 +9,12 @@ module.exports = (webpackConfigEnv) => {
   });
 
   return webpackMerge.smart(defaultConfig, {
-    externals: ["@dananb/eventmanager"],
+    externals: [
+      "react",
+      "react-dom",
+      "rxjs",
+      "single-spa",
+      "@dananb/eventmanager",
+    ],
   });
 };
